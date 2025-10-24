@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <table>
+        <caption>Personal Information</caption>  <!-- used to write table title -->      
+    <tr>
+        <thead>           <!-- used to write heading of the table -->
+        <th>Name</th>
+        <th>surname</th>
+        <th>Age</th>
+        </thead>
+       <tbody>            <!-- used to write body of the table -->
+        <td>Abhay</td>
+        <td>Kumar</td>
+        <td>20</td>
+        </tbody>
+        <tbody>
+        <td>Aashish</td>
+        <td>Kumar</td>
+        <td>20</td>
+        </tbody>
+    </tr>
+        <tfoot>
+            <td>This is footer</td>
+        </tfoot>
+        <!-- semantic elements
+        1: <thead></thead>
+        2: <tbody></tbody>
+        3: <tfoot></tfoot> -->
+         </table>
+        <hr>
+    <table border="1">
+    <tr>
+        <thead>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+        </thead>
+        <tbody>
+        <td>Abhay</td>
+        <td>Kumar</td>
+        <td>20</td>
+        </tbody>
+    </tr>
+    </table>
+    <hr>
+    <table border="1" cellpadding="10" cellspacing="0" align="center">
+        <tr>
+            <th rowspan="3">April</th>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+    <hr>
+    <!-- <table border="1" cellpadding="5" cellspacing="1">
+        <tr>
+            <td rowspan="4">Main table row1 column1</td>
+            <td colspan="2" align="center">Main table column2</td>
+        </tr> -->
+        
+           <!-- NESTED TABLE: ALWAYS PUT UNDER <td></td>
+           AVOID USING TABLE FOR LAYOUT PURPOSES -->
+
+        <table border="1">
+            <tr>
+                <td>Main table row1 column1</td>
+                <td>
+                <table border="1">
+                 <caption>Main table column2</caption>
+            <tr>
+                 <td>inner table row1 column1</td>
+                 <td>innner table row1 column2</td>
+            </tr>
+            <tr>
+                <td>inner table row2 column1</td>
+                <td>inner table row2 column2</td>
+            </tr>
+            <tr>
+                 <td>inner table row3 column1</td>
+                <td>inner table row3 column2</td>
+            </tr>
+          </table>
+         </td>
+        </tr> 
+      </table>
+</body>
+</html>
